@@ -1,3 +1,4 @@
-*.tmp
+tmp
 drafts
 public/media/images
+public/*.html

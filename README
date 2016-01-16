@@ -1,13 +1,16 @@
 # colbyolson.com
 
+## dependencies
+
+* sh, grep, curl, wget
+* [MultiMarkdown](https://github.com/fletcher/MultiMarkdown-5)
+
 ## install
 
 ```bash
-cp lib/background /usr/local/bin/
-cp lib/change-background /etc/cron.d/
+$ cp lib/background /usr/local/bin/
+$ cp lib/change-background /etc/cron.d/
 ```
-
-## blog
 
 TODO:
 
