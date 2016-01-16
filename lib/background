@@ -1,3 +1,10 @@
 #!/bin/bash
 
-wget -qO - $(curl -s https://twitter.com/FFD8FFDB | grep "Embedded image permalink" | head -n1 | cut -d'"' -f2) > /var/www/blog/media/images/background.jpg
+image=$(
+    curl -s https://twitter.com/FFD8FFDB | \
+    grep "Embedded image permalink"      | \
+    head -n1                             | \
+    cut -d'"' -f2
+)
+
+curl -s -o /var/www/blog/media/images/background.jpg $image
