@@ -1,3 +1,8 @@
+# About
+## This website
+
+This shit is running from my [Pogoplug](#) using Nginx and static files. The backgrounds are from [FFD8FFDB](https://twitter.com/FFD8FFDB), using some shell [script](https://github.com/colby/colbyolson.com/blob/master/lib/background) and cron.
+
 ## Contact Information
 I encourage you to send me your comments regarding this website.
 

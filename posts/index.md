@@ -1,3 +1,0 @@
-# colbyolson.com
-
-## header2
