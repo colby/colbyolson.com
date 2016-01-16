@@ -1,0 +1,12 @@
+body {
+    background-image: url("/media/images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed
+}
+
+div#main {
+    width: 35em;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em;
+}

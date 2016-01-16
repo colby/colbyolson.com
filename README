@@ -1,0 +1,15 @@
+# colbyolson.com
+
+## install
+
+```bash
+cp lib/background /usr/local/bin/
+cp lib/change-background /etc/cron.d/
+```
+
+## blog
+
+TODO:
+1. ~~get dyno~~
+1. ~~serve dyno'd crap~~
+1. rewrite from scratch

@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js"></script>
+</head>
+<body>
+<div id="graph" style="width:500px; height:300px;"></div>
+<script type="text/javascript">
+  g2 = new Dygraph(
+    document.getElementById("graph"),
+    "./data/bouldering.csv",
+    {}          // options
+  );
+</script>
+</body>
+</html>
