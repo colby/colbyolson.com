@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# create MD posts into HTML
+for f in ./posts/*.md; 
+do
+   multimarkdown $f -o tmp/$(echo $(basename $f) | cut -d. -f1).html
+done
+
+# inject head/foot into each HTML
+for f in ./tmp/*.html; 
+do
+   # trunc file
+   > ./public/$(basename $f)
+   cat ./lib/header.html >> public/$(basename $f)
+   cat $f >> public/$(basename $f)
+   cat ./lib/footer.html >> public/$(basename $f)
+done
