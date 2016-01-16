@@ -2,18 +2,19 @@
 
 ## dependencies
 
-* sh, grep, curl, wget
+* sh, grep, curl
 * [MultiMarkdown](https://github.com/fletcher/MultiMarkdown-5)
 
 ## install
 
 ```bash
+# install the script to download a new background image
 $ cp lib/background /usr/local/bin/
+
+# install the cron job to download a new background every 15m
 $ cp lib/change-background /etc/cron.d/
+
+# serve from /var/www/colbyolson.com
+$ mkdir -p /var/www/
+$ ln -s $PWD/public /var/www/colbyolson.com
 ```
-
-TODO:
-
-1. ~~get dyno~~
-1. ~~serve dyno'd crap~~
-1. rewrite from scratch
