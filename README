@@ -10,6 +10,7 @@ cp lib/change-background /etc/cron.d/
 ## blog
 
 TODO:
+
 1. ~~get dyno~~
 1. ~~serve dyno'd crap~~
 1. rewrite from scratch
