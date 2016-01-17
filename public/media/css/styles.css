@@ -21,6 +21,10 @@ div.sep {
 
 /* smartphone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    div#main {
+        width: 90%;
+    }
+
     div.object {
         display: block;
         font-size: 150%;
@@ -28,9 +32,5 @@ div.sep {
 
     div.sep {
         display: none;
-    }
-
-    div#main {
-        width: 90%;
     }
 }
