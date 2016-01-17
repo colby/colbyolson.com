@@ -4,9 +4,57 @@ body {
     background-attachment: fixed
 }
 
-div#main {
-    width: 35em;
-    margin: 0 auto;
+div {
     background-color: white;
-    padding: 1em;
+}
+
+/* smartphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    div.object {
+        font-size: 150%;
+    }
+
+    div.sep {
+        display: none;
+    }
+
+    div#main {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+}
+
+/* tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    div.object {
+        display: inline-block;
+    }
+
+    div.sep {
+        display: inline-block;
+    }
+
+    div#main {
+        width: 35em;
+        padding: 1em;
+        margin: 0 auto;
+    }
+}
+
+/* desktop */
+@media only screen  and (min-width : 1224px) {
+    div.object {
+        display: inline-block;
+    }
+
+    div.sep {
+        display: inline-block;
+    }
+
+    div#main {
+        width: 35em;
+        padding: 1em;
+        margin: 0 auto;
+    }
 }
