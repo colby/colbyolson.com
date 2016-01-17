@@ -2,9 +2,11 @@
 
 ls -t ./posts/*.md | xargs cat > ./pages/index.md
 
+[ ! -d ./tmp ] && mkdir ./tmp
+
 for f in ./pages/*.md; 
 do
-    multimarkdown $f -o tmp/$(echo $(basename $f) | cut -d. -f1).html
+    multimarkdown $f -o ./tmp/$(echo $(basename $f) | cut -d. -f1).html
 done
 
 for f in ./tmp/*.html; 
