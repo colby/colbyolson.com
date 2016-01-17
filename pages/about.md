@@ -1,10 +1,14 @@
 # About
-## This website
 
-This shit is running from my [Pogoplug](#) using Nginx and static files. The backgrounds are from [FFD8FFDB](https://twitter.com/FFD8FFDB), using some shell [script](https://github.com/colby/colbyolson.com/blob/master/lib/background) and cron.
+## This website
+This website is running from a [Pogoplug v4](#) using Nginx and generated static files. You can see the code invoved [here](https://github.com/colby/colbyolson.com).
+
+The backgrounds are from [FFD8FFDB](https://twitter.com/FFD8FFDB), using a shell [script](https://github.com/colby/colbyolson.com/blob/master/lib/background) and cron. Thanks to [vhost-](https://kyleterry.com) for the idea.
+
+This website uses [letsencrypt](https://letsencrypt.org/) for SSL certification. Those people are doing awesome work.
 
 ## Contact Information
-I encourage you to send me your comments regarding this website.
+I welcome you send me your comments, questions, or opinions regarding this website.
 
 You can reach me here: [comments@colbyolson.com](mailto:comments@colbyolson.com?Subject=Hello%20there!)
 
