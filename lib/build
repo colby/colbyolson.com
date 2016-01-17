@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat ./posts/*.md > ./pages/index.md
+ls -t ./posts/*.md | xargs cat > ./pages/index.md
 
 for f in ./pages/*.md; 
 do
