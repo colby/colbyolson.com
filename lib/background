@@ -1,5 +1,7 @@
 #!/bin/bash
 
+path=/var/www/colbyolson.com/media/images/background.jpg
+
 image=$(
     curl -s https://twitter.com/FFD8FFDB | \
     grep "Embedded image permalink"      | \
@@ -7,4 +9,4 @@ image=$(
     cut -d'"' -f2
 )
 
-curl -s -o /var/www/blog/media/images/background.jpg $image
+curl -s -o $path $image
