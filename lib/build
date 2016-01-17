@@ -1,6 +1,7 @@
 #!/bin/bash
 
 [ ! -d ./tmp ] && mkdir ./tmp
+[ ! -d ./pages ] && mkdir ./pages
 [ ! -d ./public ] && mkdir ./public
 
 ls -t ./posts/*.md | xargs cat > ./pages/index.md
