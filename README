@@ -19,6 +19,12 @@ $ cp lib/change-background /etc/cron.d/
 # serve from /var/www/colbyolson.com
 $ mkdir -p /var/www/
 $ ln -s $PWD/public /var/www/colbyolson.com
+```
+
+## usage
+
+```bash
+$ cd colbyolson.com
 
 # create an about page
 $ echo "# About" > pages/about.md
