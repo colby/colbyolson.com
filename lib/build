@@ -1,8 +1,9 @@
 #!/bin/bash
 
-ls -t ./posts/*.md | xargs cat > ./pages/index.md
-
 [ ! -d ./tmp ] && mkdir ./tmp
+[ ! -d ./public ] && mkdir ./public
+
+ls -t ./posts/*.md | xargs cat > ./pages/index.md
 
 for f in ./pages/*.md; 
 do
