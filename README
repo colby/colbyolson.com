@@ -8,6 +8,8 @@
 ## install
 
 ```bash
+$ cd colbyolson.com
+
 # install the script to download a new background image
 $ cp lib/background /usr/local/bin/
 
@@ -17,4 +19,13 @@ $ cp lib/change-background /etc/cron.d/
 # serve from /var/www/colbyolson.com
 $ mkdir -p /var/www/
 $ ln -s $PWD/public /var/www/colbyolson.com
+
+# create an about page
+$ echo "# About" > pages/about.md
+
+# create a post
+$ echo "# A post" > posts/apost.md
+
+# build the site
+$ lib/build
 ```
