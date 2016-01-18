@@ -5,32 +5,33 @@ body {
 }
 
 div#main {
-    width: 35em;
+    width: 90%;
     background-color: white;
     margin: 0 auto;
     padding: 1em;
 }
 
 div.object {
-    display: inline-block;
+    display: block;
+    font-size: 150%;
 }
 
 div.sep {
-    display: inline-block;
+    display: none;
 }
 
-/* smartphone */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* tablets and desktop */
+@media only screen and (min-device-width : 769px) {
     div#main {
-        width: 90%;
+        width: 40em;
     }
 
     div.object {
-        display: block;
-        font-size: 150%;
+        display: inline-block;
+        font-size: 1em;
     }
 
     div.sep {
-        display: none;
+        display: inline-block;
     }
 }
