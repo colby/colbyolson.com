@@ -6,7 +6,9 @@
 
 ls -t ./posts/*.md | xargs cat > ./pages/index.md
 
-for f in ./pages/*.md; 
+files=($(ls ./pages/*.md ./posts/*.md))
+
+for f in $files;
 do
     multimarkdown $f -o ./tmp/$(echo $(basename $f) | cut -d. -f1).html
 done
