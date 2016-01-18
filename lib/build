@@ -6,7 +6,7 @@
 
 ls -t ./posts/*.md | xargs cat > ./pages/index.md
 
-files=($(ls ./pages/*.md ./posts/*.md))
+files=$(find ./pages ./posts -name "*.md")
 
 for f in $files;
 do
