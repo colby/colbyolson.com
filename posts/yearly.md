@@ -6,7 +6,6 @@ A first of hopefully many end-of-year posts, an idea stolen from [jnerula](http:
 
 * Two years living alone in Portland
 * Started rock climbing (Nov '04, but whatevs)
-    * Reached my goal of sending a V6 (indoor at PG PDX)
     * Lead certified
     * Leading 5.10
 * Started riding a bike more often, 48x17 fixed
