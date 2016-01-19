@@ -23,7 +23,7 @@ div.sep {
 /* tablets and desktop */
 @media only screen and (min-device-width : 769px) {
     div#main {
-        width: 40em;
+        width: 35em;
     }
 
     div.object {
