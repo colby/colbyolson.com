@@ -3,3 +3,5 @@ drafts
 pages/index.md
 public/media/images
 public/*.html
+*.swp
+*.swo
