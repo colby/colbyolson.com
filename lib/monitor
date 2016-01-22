@@ -1,6 +1,8 @@
 #!/bin/bash
 
-while inotifywait -qqre move,modify,close_write .
+cd /var/www/colbyolson.com
+
+while inotifywait -qqre move,close_write .
 do
     lib/build
 done
