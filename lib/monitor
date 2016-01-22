@@ -2,7 +2,7 @@
 
 cd /var/www/colbyolson.com
 
-while inotifywait -qqre move,close_write .
+while inotifywait -qre move,close_write . | grep *.md
 do
     lib/build
 done
