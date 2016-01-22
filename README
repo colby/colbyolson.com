@@ -4,6 +4,7 @@
 
 * sh, grep, curl
 * [MultiMarkdown](https://github.com/fletcher/MultiMarkdown-5)
+* [inotify-tools](https://github.com/rvoicilas/inotify-tools/wiki) (_optional_)
 
 ## install
 
