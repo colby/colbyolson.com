@@ -1,25 +1,29 @@
 #!/bin/bash
 
-[ ! -d ./tmp ] && mkdir ./tmp
-[ ! -d ./pages ] && mkdir ./pages
-[ ! -d ./public ] && mkdir ./public
+cd /var/www/colbyolson.com
 
-ls -t ./posts/*.md | xargs cat > ./pages/index.md
+[ ! -d tmp ] && mkdir tmp
+[ ! -d pages ] && mkdir pages
+[ ! -d public ] && mkdir public
 
-files=$(find ./pages ./posts -name "*.md")
+ls -t posts/*.md | xargs cat > pages/index.md
+
+files=$(find drafts pages posts -name "*.md")
+
+rm tmp/*.html
 
 for f in $files;
 do
-    multimarkdown $f -o ./tmp/$(echo $(basename $f) | cut -d. -f1).html
+    multimarkdown $f -o tmp/$(echo $(basename $f) | cut -d. -f1).html
 done
 
-for f in ./tmp/*.html; 
+for f in tmp/*.html;
 do
-    file="./public/$(basename $f)"
+    file="public/$(basename $f)"
  
     > $file
  
-    cat ./lib/header.html >> $file
-    cat $f                >> $file
-    cat ./lib/footer.html >> $file
+    cat lib/header.html >> $file
+    cat $f              >> $file
+    cat lib/footer.html >> $file
 done
