@@ -1,6 +1,6 @@
 # [Pogoplugv4](/pogoplugv4)
 
-The good, the bad, and the something about the [Pogoplugv4][].
+The good, the bad, and something about the [Pogoplugv4][].
 
 ## The good
 
