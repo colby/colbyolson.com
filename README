@@ -37,4 +37,7 @@ $ lib/build
 
 # automatic building
 $ lib/monitor &
+
+# stop building
+$ lib/unmonitor
 ```
