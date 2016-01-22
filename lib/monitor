@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while inotifywait -qqre move,modify,close_write .
+do
+    lib/build
+done
