@@ -1,7 +1,7 @@
 # About
 
 ## This website
-This website is running from a [Pogoplug v4](/pogoplugv4) using Nginx and generated static files. You can see the code invoved [here](https://github.com/colby/colbyolson.com).
+This website is running from a [Pogoplugv4](/pogoplugv4) using Nginx and generated static files. You can see the code invoved [here](https://github.com/colby/colbyolson.com).
 
 The backgrounds are from [FFD8FFDB](https://twitter.com/FFD8FFDB), using a shell [script](https://github.com/colby/colbyolson.com/blob/master/lib/background) and cron. Thanks to [vhost-](https://kyleterry.com) for the idea.
 
