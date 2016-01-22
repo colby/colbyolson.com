@@ -34,4 +34,7 @@ $ echo "# A post" > posts/apost.md
 
 # build the site
 $ lib/build
+
+# automatic building
+$ lib/monitor &
 ```
