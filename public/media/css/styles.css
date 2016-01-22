@@ -4,6 +4,10 @@ body {
     background-attachment: fixed
 }
 
+a {
+    color: black;
+}
+
 div#main {
     width: 90%;
     background-color: white;
