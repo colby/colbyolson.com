@@ -2,22 +2,28 @@
 
 cd /var/www/colbyolson.com
 
-[ ! -d tmp ] && mkdir tmp
-[ ! -d pages ] && mkdir pages
-[ ! -d public ] && mkdir public
+mkdir -p tmp pages public
 
-ls -t posts/*.md | xargs cat > pages/index.md
+rm tmp/*.html
+rm pages/index.md
+
+coffin='<div class="coffin">&#x26b0;</div>'
+
+posts=$(ls -t posts/*.md)
+for p in $posts
+do
+    cat $p >> pages/index.md
+    echo $coffin >> pages/index.md
+done
 
 files=$(find drafts pages posts -name "*.md")
 
-rm tmp/*.html
-
-for f in $files;
+for f in $files
 do
     multimarkdown $f -o tmp/$(echo $(basename $f) | cut -d. -f1).html
 done
 
-for f in tmp/*.html;
+for f in tmp/*.html
 do
     file="public/$(basename $f)"
  
