@@ -10,9 +10,10 @@ rm pages/index.md
 cross='<div class="cross">&#x271E;</div>'
 
 posts=$(ls -t posts/*.md)
+
 for p in $posts
 do
-    cat $p >> pages/index.md
+    cat  $p     >> pages/index.md
     echo $cross >> pages/index.md
 done
 
