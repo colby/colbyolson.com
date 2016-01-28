@@ -1,6 +1,6 @@
 #!/bin/bash
 
-path=/var/www/colbyolson.com/media/images/background.jpg
+path=/var/www/colbyolson.com/public/media/images/background.jpg
 
 image=$(
     curl -s https://twitter.com/FFD8FFDB | \
