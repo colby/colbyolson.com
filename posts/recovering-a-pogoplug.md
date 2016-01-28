@@ -73,7 +73,7 @@ $ shutdown -h now
 
 Go plug that SATA drive back into your PogoPlug and pray to Stallman that everything works.
 
-Big thanks to [aurel32](https://people.debian.org/~aurel32/) for hosting!
+Big thanks to [aurel32](https://people.debian.org/~aurel32/) for hosting. If the files linked above go missing, you can download them from me, under `/media/assets`.
 
 [PogoPlugv4]: https://colbyolson.com/pogoplugv4
 [Homebrew]: http://brew.sh
