@@ -29,6 +29,16 @@ div.sep {
     display: none;
 }
 
+div.coffin {
+    text-align: center;
+    font-size: 180%;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
 /* tablets and desktop */
 @media only screen and (min-width : 666px) {
     div#main {
