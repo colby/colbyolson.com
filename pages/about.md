@@ -1,4 +1,4 @@
-# About
+# [About](/about)
 
 ## This website
 This website is running from a [Pogoplugv4](/pogoplugv4) using Nginx and generated static files. You can see the code invoved [here](https://github.com/colby/colbyolson.com).
