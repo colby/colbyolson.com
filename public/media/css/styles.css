@@ -11,8 +11,13 @@ a {
 div#main {
     width: 90%;
     background-color: white;
+    overflow: hidden;
     margin: 0 auto;
     padding: 1em;
+}
+
+pre {
+    overflow-x:auto;
 }
 
 div.object {
