@@ -31,7 +31,14 @@ $ cd colbyolson.com
 $ echo "# About" > pages/about.md
 
 # create a post
-$ echo "# A post" > posts/apost.md
+$ echo "# A post" > posts/a-new-post.md
+
+# create a draft
+$ lib/draft a simple filename goes here
+$ vim drafts/a-simple-filename-goes-here.md
+
+# publish a draft
+$ mv drafts/a-simple-filename-goes-here.md posts/
 
 # build the site
 $ lib/build
