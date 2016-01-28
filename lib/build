@@ -6,8 +6,8 @@ cd $BLOG_PATH
 
 mkdir -p tmp pages public
 
-rm tmp/*.html
-rm pages/index.md
+rm -f tmp/*.html
+rm -f pages/index.md
 
 cross='<div class="cross">&#x271E;</div>'
 
