@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd /var/www/colbyolson.com
+path=/var/www/colbyolson.com
 
-while inotifywait -qre move,close_write . | grep *.md
+while inotifywait -qqre move,close_write $path
 do
-    lib/build
+    cd $path && lib/build
 done
