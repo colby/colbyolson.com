@@ -5,3 +5,7 @@ public/media/images
 public/*.html
 *.swp
 *.swo
+
+public/media/debian_wheezy_armel_standard.qcow2
+public/media/initrd.img-3.2.0-4-versatile
+public/media/vmlinuz-3.2.0-4-versatile
