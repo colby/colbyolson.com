@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd /var/www/colbyolson.com
+set -o errexit
+
+cd $BLOG_PATH
 
 mkdir -p tmp pages public
 

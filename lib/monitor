@@ -1,6 +1,8 @@
 #!/bin/bash
 
-path=/var/www/colbyolson.com
+set -o errexit
+
+path=$BLOG_PATH
 
 while inotifywait -qqre move,close_write $path
 do
