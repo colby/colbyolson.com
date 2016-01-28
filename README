@@ -11,21 +11,25 @@
 ```bash
 $ cd colbyolson.com
 
+# set the location of the blog, load the new variable
+$ echo "export BLOG_PATH=/var/www/colbyolson.com" >> ~/.bashrc
+$ source ~/.bashrc
+
+# NOTE: web root should be $BLOG_PATH/public
+$ mkdir -p $BLOG_PATH
+$ ln -s $PWD $BLOG_PATH
+
 # install the script to download a new background image
 $ cp lib/background /usr/local/bin/
 
 # install the cron job to download a new background every 15m
 $ cp lib/change-background /etc/cron.d/
-
-# serve from /var/www/colbyolson.com
-$ mkdir -p /var/www/
-$ ln -s $PWD/public /var/www/colbyolson.com
 ```
 
 ## usage
 
 ```bash
-$ cd colbyolson.com
+$ cd $BLOG_PATH
 
 # create an about page
 $ echo "# About" > pages/about.md
