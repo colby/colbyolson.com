@@ -7,13 +7,13 @@ mkdir -p tmp pages public
 rm tmp/*.html
 rm pages/index.md
 
-coffin='<div class="coffin">&#x26b0;</div>'
+cross='<div class="cross">&#x271E;</div>'
 
 posts=$(ls -t posts/*.md)
 for p in $posts
 do
     cat $p >> pages/index.md
-    echo $coffin >> pages/index.md
+    echo $cross >> pages/index.md
 done
 
 files=$(find drafts pages posts -name "*.md")

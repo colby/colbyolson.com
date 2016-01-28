@@ -29,14 +29,14 @@ div.sep {
     display: none;
 }
 
-div.coffin {
+div.cross {
     text-align: center;
     font-size: 180%;
 
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
 }
 
 /* tablets and desktop */
