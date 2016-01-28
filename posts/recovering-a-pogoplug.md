@@ -37,7 +37,7 @@ ed7c39ec86e759240bdddd783248ed8b  initrd.img-3.2.0-4-versatile
 3bdf3393243e65bd862b1398a494134a  vmlinuz-3.2.0-4-versatile
 ```
 
-Plug the SATA drive in to the host machine using the adaptor. OSX might not recognize the drive, that's ok. Once it's plugged in, we need to find it's location.
+Plug the SATA drive into the host machine using the USB adaptor. OSX might not recognize the drive, that's ok. Once it's plugged in, search for it's location.
 
 ```
 $ diskutil list

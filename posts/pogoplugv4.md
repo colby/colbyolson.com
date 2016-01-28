@@ -9,14 +9,14 @@ The good, the bad, and something about the [Pogoplugv4][].
 * Gig NIC
 * USB3
 * SATA
-* SD
+* SD card
 
 ## The bad
 
 * No display
-* Tricky setup, multiple tries
-* Emulating ARM for recovery
-    * [QEMU][] and USB
+* Committed setup, could take multiple tries
+* [Emulating ARM for recovery](/recovering-a-pogoplug.html)
+    * [QEMU][] and USB adapter
 
 ## The something
 
