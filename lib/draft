@@ -1,0 +1,19 @@
+#!/bin/bash
+
+case $@ in
+    *.md)
+        file=$@
+        ;;
+    *)
+        file=${@}.md
+        ;;
+esac
+
+file=${file// /-}
+link=${file::-3}
+
+cd /var/www/colbyolson.com
+
+cat > drafts/$file <<EOL
+# [$link](/$link)
+EOL
