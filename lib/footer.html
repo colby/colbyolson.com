@@ -1,3 +1,15 @@
 </div>
+
+<script>
+    var main= $("#main");
+    var width= $(main).width();
+    $(main).find("code").each(function()
+                             {
+                                 if ($(this).width() > width) {
+                                     $(this).parent().addClass('overflow');
+                                 }
+                             });
+</script>
+
 </body>
 </html>

@@ -29,6 +29,11 @@ div.sep {
     display: none;
 }
 
+pre.overflow {
+    border-width: 1px;
+    border-right-style: dotted;
+}
+
 div.cross {
     text-align: center;
     font-size: 180%;
