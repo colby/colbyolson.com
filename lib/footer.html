@@ -1,14 +1,23 @@
 </div>
 
 <script>
+
+function overflow() {
     var main= $("#main");
     var width= $(main).width();
     $(main).find("code").each(function()
                              {
                                  if ($(this).width() > width) {
                                      $(this).parent().addClass('overflow');
+                                 } else {
+                                     $(this).parent().removeClass('overflow');
                                  }
                              });
+}
+
+window.onload = overflow;
+window.onresize = overflow;
+
 </script>
 
 </body>
