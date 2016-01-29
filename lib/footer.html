@@ -7,10 +7,11 @@ function overflow() {
     var width= $(main).width();
     $(main).find("code").each(function()
                              {
+                                 var pre= $(this).parent()
                                  if ($(this).width() > width) {
-                                     $(this).parent().addClass('overflow');
+                                     pre.addClass('overflow');
                                  } else {
-                                     $(this).parent().removeClass('overflow');
+                                     pre.removeClass('overflow');
                                  }
                              });
 }
