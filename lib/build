@@ -4,7 +4,7 @@ set -o errexit
 
 cd $BLOG_PATH
 
-mkdir -p tmp pages public
+mkdir -p tmp pages posts drafts public
 
 rm -f tmp/*.html
 rm -f pages/index.md
