@@ -5,7 +5,7 @@ This website is running from a [Pogoplugv4](/pogoplugv4) using Nginx and generat
 
 The backgrounds are from [FFD8FFDB](https://twitter.com/FFD8FFDB), using a shell [script](https://github.com/colby/colbyolson.com/blob/master/lib/background) and cron. Thanks to [vhost-](https://kyleterry.com) for the idea.
 
-This website uses [letsencrypt](https://letsencrypt.org/) for SSL certification. Those people are doing awesome work.
+This website uses [Let's Encrypt](/using-letsencrypt) for SSL certification. Those people are doing awesome work.
 
 ## Contact Information
 I welcome you send me your comments, questions, or opinions regarding this website.
