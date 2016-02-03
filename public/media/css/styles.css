@@ -25,10 +25,6 @@ div.object {
     font-size: 150%;
 }
 
-a.anchor {
-    display: none;
-}
-
 div.sep {
     display: none;
 }
@@ -52,6 +48,18 @@ div.cross {
 @media screen and (min-width : 666px) {
     div#main {
         width: 35em;
+    }
+
+    a.anchor {
+        display: none;
+    }
+
+    h1 a {
+        text-decoration: none;
+    }
+
+    h1 a:hover {
+        text-decoration: underline;
     }
 
     div.object {
