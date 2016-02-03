@@ -25,6 +25,10 @@ div.object {
     font-size: 150%;
 }
 
+a.anchor {
+    display: none;
+}
+
 div.sep {
     display: none;
 }
@@ -56,6 +60,18 @@ div.cross {
     }
 
     div.sep {
+        display: inline-block;
+    }
+
+    a.anchor {
+        text-decoration: none;
+    }
+
+    h2:hover a.anchor {
+        display: inline-block;
+    }
+
+    h3:hover a.anchor {
         display: inline-block;
     }
 }
