@@ -11,7 +11,7 @@ rm -f pages/index.md
 
 cross='<div class="cross">&#x271E;</div>'
 
-posts=$(find posts -name "*.md")
+posts=$(ls -t posts/*.md)
 
 for p in $posts
 do
