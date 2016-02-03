@@ -2,9 +2,16 @@
 
 <script>
 
+$("h2, h3, h4").each(function()
+                    {
+                        var current = $(this);
+                        $(this).append("&nbsp;<a class='anchor' href=" + window.location.pathname + "#" + $(this).attr("id") + ">#</a>");
+                    });
+
 function overflow() {
     var main= $("#main");
     var width= $(main).width();
+
     $(main).find("code").each(function()
                              {
                                  var pre= $(this).parent()
