@@ -9,7 +9,7 @@ mkdir -p tmp pages posts drafts public
 rm -f tmp/*.html
 rm -f pages/index.md
 
-cross='<div class="cross">&#x271E;</div>'
+cross='<div title="hail satan" class="cross">&#x271E;</div>'
 
 posts=$(ls -t posts/*.md)
 
