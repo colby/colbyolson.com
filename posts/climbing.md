@@ -1,5 +1,13 @@
 # [Climbing](/climbing)
 
+These are miscellaneous notes I've taken while reading climbing related books.
+
+Books:
+
+* [9 Out of 10 Climbers Make the Same Mistakes][]
+* [Training for Climbing][]
+* [Self-Coached Climber][]
+
 ## Fundamentals
 
 ### Feet
@@ -35,3 +43,7 @@ Find a 10-25% degree overhang wall.
 Climb onto the wall and balance your weight evenly on two footholds. Grip the higher of the two handholds with one hand, place the other hand behind your back. Now drop down, catch the lower handhold, and quickly lunge back up to the higher starting hold.
 
 Continue lunging both arms for three sets.
+
+[9 Out of 10 Climbers Make the Same Mistakes]: http://www.amazon.com/gp/product/095642810X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=095642810X&linkCode=as2&tag=colbyolsoncom-20&linkId=DLIYJXDYKT56QGSW
+[Training for Climbing]: http://www.amazon.com/gp/product/0762746920/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0762746920&linkCode=as2&tag=colbyolsoncom-20&linkId=XZCBZIREPARLF2TQ
+[Self-Coached Climber]: http://www.amazon.com/gp/product/0811733394/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0811733394&linkCode=as2&tag=colbyolsoncom-20&linkId=32YDJEHZS6LIXKPX
