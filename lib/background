@@ -6,7 +6,7 @@ path=$BLOG_PATH/public/media/images/background.jpg
 
 image=$(
     curl -s https://twitter.com/FFD8FFDB | \
-    grep "Embedded image permalink"      | \
+    grep "data-image-url"                | \
     head -n1                             | \
     cut -d'"' -f2
 )
