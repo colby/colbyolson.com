@@ -11,6 +11,7 @@ rm -f pages/index.md
 
 cross='<div title="hail satan" class="cross">&#x271E;</div>'
 
+# create an index
 posts=$(ls -t posts/*.md)
 
 for p in $posts
@@ -19,6 +20,7 @@ do
     echo $cross >> pages/index.md
 done
 
+# build all markdown files
 files=$(find drafts pages posts -name "*.md")
 
 for f in $files
@@ -26,6 +28,7 @@ do
     multimarkdown $f -o tmp/$(echo $(basename $f) | cut -d. -f1).html
 done
 
+# build all pages with header and footer
 for f in tmp/*.html
 do
     file="public/$(basename $f)"
@@ -35,4 +38,13 @@ do
     cat lib/header.html >> $file
     cat $f              >> $file
     cat lib/footer.html >> $file
+done
+
+# clear sitemap and rebuild
+> public/sitemap.txt
+files=$(find pages posts -name "*.md")
+
+for f in $files
+do
+    echo "https://colbyolson.com/$(echo $(basename $f) | cut -d. -f1)" >> public/sitemap.txt
 done
