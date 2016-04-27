@@ -3,6 +3,7 @@ drafts
 pages/index.md
 public/media/images
 public/*.html
+public/sitemap.txt
 *.swp
 *.swo
 
