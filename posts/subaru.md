@@ -1,4 +1,5 @@
-# 2005 Subaru Legacy Outback
+# Subaru Outback
+Information that I have collected for my 2005 Subaru Outback XT Limited.
 
 ## Maintenance
 
@@ -18,8 +19,8 @@
 * Sway bar
 * Lift
     * [Primitive Racing's Lift Kit][]
-    * [Primitive Racing's Skid Plate][]
 * Skid plate
+    * [Primitive Racing's Skid Plate][]
 * Turbo
 * AccessPort
     * [COBB Tuning AccessPORT V3][]
