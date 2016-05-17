@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /media
+Disallow: /southpark
+
+Sitemap: http://colbyolson.com/sitemap.xml
