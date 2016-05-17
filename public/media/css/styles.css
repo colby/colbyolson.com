@@ -45,7 +45,7 @@ div.cross {
 }
 
 /* tablets and desktop */
-@media screen and (min-width : 666px) {
+@media screen,print and (min-width : 666px) {
     div#main {
         width: 35em;
     }
