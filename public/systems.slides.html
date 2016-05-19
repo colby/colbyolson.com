@@ -11,7 +11,9 @@
                     <p>A talk by Colby Olson</p>
                 </section>
                 <section>
+		    <section>
                     <h1>OSI levels</h1>
+		    </section>
 		    <section>
                         <p>Open Systems Interconnection model, 1984</p>
                     </section>
@@ -51,7 +53,7 @@
                         <p>Structuring and managing a multi-node network, including addressing, routing and
                         traffic control</p>
                         <ul>
-                        <li>ICMP, IPsec, IPv4, IPv6</li>
+                        <li>IP, ICMP, IPsec, IPv4, IPv6</li>
                         </ul>
                     </section>
 		    <section>
@@ -88,12 +90,23 @@
                     </section>
                 </section>
                 <section>
-                    <h1>Responsibility</h1>
 		    <section>
-                        <p>A good hosting provider should deal with the first four, sometimes five, levels.</p>
+                    <h1>Responsibility</h1>
+		    </section>
+		    <section>
+                        <p>Where is your server running?</p>
+		    </section>
+		    <section>
+                        <p>The levels of responsibility will vary between providers.</p>
+		    </section>
+		    <section>
+                        <p>Colocation vs Cloud</p>
+		    </section>
+		    <section>
+                        <p>A provider often deals with the first four, sometimes five, levels.</p>
                     </section>
 		    <section>
-                        <p>As a Systems Engineer, I should know how work my way up and down the OSI model in to order to diagnose issues into their respective levels.</p>
+                        <p>As a Systems Engineer, I should know how to traverse the OSI model in to order to diagnose issues into their respective levels.</p>
                     </section>
 		    <section>
                         <p>It is important to know which level an issue is at so we can communicate with the appropriate people.</p>
@@ -108,11 +121,51 @@
                         <p>Berkeley Internet Name Domain (BIND) package, 1984</p>
                     </section>
 		    <section>
-                        <pre><code>$ dig @8.8.8.8 copiousinc.com +short
-45.79.162.208</code></pre>
+                        <p>noodles.copiousinc.com.</p>
                     </section>
 		    <section>
-                        <pre class="stretch">$ dig @8.8.8.8 copio.us any
+                        <table>
+                          <tr>
+                            <td>subdomain</td>
+                            <td>second-level domain</td>
+                            <td>top-level domain</td> 
+                            <td>root-level domain</td>
+                          </tr>
+                          <tr>
+                            <td>noodles.</td>
+                            <td>copiousinc.</td>
+                            <td>com.</td> 
+                            <td>.</td>
+                          </tr>
+                        </table>
+                    </section>
+		    <section>
+                        <pre class="stretch">
+$ dig @8.8.8.8 copiousinc.com
+
+; <<>> DiG 9.8.3-P1 <<>> @8.8.8.8 copiousinc.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64307
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;copiousinc.com.                        IN      A
+
+;; ANSWER SECTION:
+copiousinc.com.         1799    IN      A       45.79.162.208
+
+;; Query time: 120 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Wed May 18 22:56:42 2016
+;; MSG SIZE  rcvd: 48
+</pre>
+                    </section>
+		    <section>
+                        <pre class="stretch">
+$ dig @8.8.8.8 copio.us any
+
 ; &lt;&lt;&gt;&gt; DiG 9.8.3-P1 &lt;&lt;&gt;&gt; @8.8.8.8 copio.us any
 ; (1 server found)
 ;; global options: +cmd
@@ -139,16 +192,69 @@ copio.us.      21599   IN      SOA     ns10.dnsmadeeasy.com.
 ;; WHEN: Tue May 17 18:21:08 2016
 ;; MSG SIZE  rcvd: 468</pre>
                     </section>
+		    <section>
+                        <pre class="stretch">
+$ dig @8.8.8.8 noodles.copiousinc.com
+
+; <<>> DiG 9.8.3-P1 <<>> @8.8.8.8 noodles.copiousinc.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 20428
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;noodles.copiousinc.com.                IN      A
+
+;; AUTHORITY SECTION:
+copiousinc.com.         175     IN      SOA     ns10.dnsmadeeasy.com. dns.dnsmadeeasy.com.
+
+;; Query time: 16 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Wed May 18 22:55:59 2016
+;; MSG SIZE  rcvd: 97
+</pre>
+                    </section>
+		    <section>
+                        <pre class="stretch">
+$ dig @8.8.8.8 copiousss.com
+
+; <<>> DiG 9.8.3-P1 <<>> @8.8.8.8 copiousss.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 15608
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;copiousss.com.                 IN      A
+
+;; AUTHORITY SECTION:
+com.                    899     IN      SOA     a.gtld-servers.net. nstld.verisign-grs.com.
+
+;; Query time: 67 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Wed May 18 22:58:52 2016
+;; MSG SIZE  rcvd: 104
+</pre>
+                    </section>
                     <section>
                         <p>See also:  <code>whois</code>, <code>nslookup</code>, <code>host</code></p>
                     </section>
                     <section>
-                        <h2 id="ping"><code>ping</code></h2>
+                        <h2><code>ping</code></h2>
                         <p>Mike Muuss, 1983</p>
-                        <p>What is an ICMP ping </p>
                     </section>
                     <section>
-                        <pre class="stretch">$ ping -c3 45.79.162.208
+                        <p>The Internet Control Message Protocol (ICMP) is one of the main protocols of the Internet.</p>
+                    </section>
+                    <section>
+                        <p>The fundamental purpose of the ICMP protocol is to report problems with the delivery of IP datagrams.</p>
+                    </section>
+                    <section>
+                        <pre class="stretch">
+$ ping -c3 45.79.162.208
+
 PING 45.79.162.208 (45.79.162.208): 56 data bytes
 64 bytes from 45.79.162.208: icmp_seq=0 ttl=48 time=83.227 ms
 64 bytes from 45.79.162.208: icmp_seq=1 ttl=48 time=83.087 ms
@@ -159,14 +265,57 @@ PING 45.79.162.208 (45.79.162.208): 56 data bytes
 round-trip min/avg/max/stddev = 82.906/83.073/83.227/0.131 ms</pre>
                     </section>
                     <section>
+                        <pre class="stretch">
+$ ping google.com
+
+PING google.com (216.58.217.14): 56 data bytes
+64 bytes from 216.58.217.14: icmp_seq=0 ttl=54 time=42.258 ms
+64 bytes from 216.58.217.14: icmp_seq=1 ttl=54 time=43.908 ms
+...
+64 bytes from 216.58.217.14: icmp_seq=12 ttl=54 time=44.357 ms
+64 bytes from 216.58.217.14: icmp_seq=13 ttl=54 time=172.463 ms
+64 bytes from 216.58.217.14: icmp_seq=14 ttl=54 time=42.120 ms
+64 bytes from 216.58.217.14: icmp_seq=15 ttl=54 time=146.110 ms
+ping: sendto: No route to host
+Request timeout for icmp_seq 16
+ping: sendto: No route to host
+Request timeout for icmp_seq 17
+ping: sendto: No route to host
+Request timeout for icmp_seq 18
+ping: sendto: No route to host
+Request timeout for icmp_seq 19
+Request timeout for icmp_seq 20
+64 bytes from 216.58.217.14: icmp_seq=21 ttl=54 time=42.788 ms
+64 bytes from 216.58.217.14: icmp_seq=22 ttl=54 time=72.327 ms
+^C
+--- google.com ping statistics ---
+24 packets transmitted, 19 packets received, 20.8% packet loss
+round-trip min/avg/max/stddev = 39.390/58.100/172.463/35.900 ms
+</pre>
+                    </section>
+                    <section>
                         <p>See also: <code>traceroute</code>, <code>arp</code></p>
                     </section>
                     <section>
-                        <h2 id="curl"><code>curl</code></h2>
+                        <h2><code>curl</code></h2>
                         <p>Daniel Stenberg, 1997 (Wget was 1996)</p>
                     </section>
                     <section>
-                        <pre class="stretch">$ curl -IL --header 'Host: www.copio.us' 45.79.162.208
+                        <pre class="stretch">
+$ curl -IL copio.us
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 19 May 2016 05:47:11 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Keep-Alive: timeout=20
+...</pre>
+                    </section>
+                    <section>
+                        <pre class="stretch">
+$ curl -IL www.copio.us
+
 HTTP/1.1 301 Moved Permanently
 Server: nginx
 Date: Wed, 18 May 2016 01:04:25 GMT
@@ -185,6 +334,16 @@ Keep-Alive: timeout=20
 ...</pre>
                     </section>
                     <section>
+                        <pre class="stretch">
+$ curl -IL --header 'Host: googles.com' google.com
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1561
+Date: Thu, 19 May 2016 05:46:09 GMT
+...</pre>
+                    </section>
+                    <section>
                         <p>See also: <code>wget</code>, <code>lynx</code></p>
                     </section>
                     <section>
@@ -192,7 +351,9 @@ Keep-Alive: timeout=20
                         <p>Branko Lankester, 1994</p>
                     </section>
                     <section>
-                        <pre class="stretch">$ ps -f -u www-data,reid
+                        <pre class="stretch">
+$ ps -f -u www-data,reid
+
 UID        PID  PPID  C STIME TTY          TIME CMD
 www-data  1044  1043  0  2015 ?        00:00:00 php-fpm: pool www
 www-data  1045  1043  0  2015 ?        00:00:00 php-fpm: pool www
@@ -209,19 +370,32 @@ reid     32262 32261  0  2014 pts/2    00:00:00 /bin/bash</pre>
                         <p>Hobbit or Giovanni Giacobbi (GNU netcat), 1995</p>
                     </section>
                     <section>
-                        <pre class="stretch">$ netcat -v cache3.dfw.z.com 6383
+                        <pre class="stretch">
+$ netcat -v cache3.dfw.z.com 6383
+
 Connection to cache3.dfw.z.com 6383 port [tcp/*] succeeded!
-&gt;KEYS *
-*264
-$65
-zc:k:alphanumericDB_PDO_MYSQL_DDL_z_saleswarp_order_status_1
-$41
-zc:k:zzZend_LocaleC_nb_NO_language_nb
-^C</pre>
+</pre>
                     </section>
                     <section>
-<pre class="stretch">$ netcat -v cache3.dfw.z.com 6386
+                        <pre class="stretch">
+$ netcat -v cache3.dfw.z.com 6386
+
 netcat: connect to cache3.dfw.z.com port 6386 (tcp) failed: Connection refused</pre>
+                    </section>
+                    <section>
+                        <pre class="stretch">
+$ netcat -v google.com 80
+
+Connection to google.com 80 port [tcp/http] succeeded!
+HEAD / HTTP/1.0
+
+HTTP/1.0 200 OK
+Date: Thu, 19 May 2016 06:10:56 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=ISO-8859-1
+...
+</pre>
                     </section>
                     <section>
                         <p>See also: <code>telnet</code></p>
@@ -231,31 +405,67 @@ netcat: connect to cache3.dfw.z.com port 6386 (tcp) failed: Connection refused</
                         <p>Fred Baumgarten, 1999</p>
                     </section>
                     <section>
-                        <pre class="stretch">deploy@cache3:~$ sudo netstat -plnt
+                        <pre class="stretch">
+$ sudo netstat -plt4
+
 Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address      Foreign Address State
-PID/Program name
-tcp        0      0 10.150.0.20:6381   *:*             LISTEN 7523/redis-server
-tcp        0      0 10.150.0.20:6382   *:*             LISTEN 7532/redis-server
-tcp        0      0 10.150.0.20:6383   *:*             LISTEN 7541/redis-server
-tcp        0      0 10.150.0.20:6384   *:*             LISTEN 7550/redis-server
-tcp        0      0 10.150.0.20:6385   *:*             LISTEN 11365/redis-server
-tcp6       0      0 [::]:6381          [::]:*          LISTEN 13392/redis-server
-tcp6       0      0 [::]:6382          [::]:*          LISTEN 13424/redis-server
-tcp6       0      0 [::]:6383          [::]:*          LISTEN 13462/redis-server
-tcp6       0      0 [::]:6384          [::]:*          LISTEN 13500/redis-server</pre>
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 *:www-http              *:*                     LISTEN      6738/nginx: worker
+tcp        0      0 *:ssh                   *:*                     LISTEN      298/sshd
+tcp        0      0 *:https                 *:*                     LISTEN      6738/nginx: worker
+tcp        0      0 *:llmnr                 *:*                     LISTEN      304/systemd-resolve
+</pre>
+                    </section>
+                    <section>
+                        <pre class="stretch">
+$ netcat -v cache3.dfw.z.com 6386
+
+netcat: connect to cache3.dfw.z.com port 6386 (tcp) failed: Connection refused</pre>
+                    </section>
+                    <section>
+                        <pre class="stretch">
+deploy@cache3:~$ sudo netstat -plnt
+
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address      Foreign Address State    PID/Program name
+tcp        0      0 10.150.0.20:6381   *:*             LISTEN   7523/redis-server
+tcp        0      0 10.150.0.20:6382   *:*             LISTEN   7532/redis-server
+tcp        0      0 10.150.0.20:6383   *:*             LISTEN   7541/redis-server
+tcp        0      0 10.150.0.20:6384   *:*             LISTEN   7550/redis-server
+tcp        0      0 10.150.0.20:6385   *:*             LISTEN   11365/redis-server
+tcp6       0      0 [::]:6381          [::]:*          LISTEN   13392/redis-server
+tcp6       0      0 [::]:6382          [::]:*          LISTEN   13424/redis-server
+tcp6       0      0 [::]:6383          [::]:*          LISTEN   13462/redis-server
+tcp6       0      0 [::]:6384          [::]:*          LISTEN   13500/redis-server</pre>
                     </section>
                     <section>
                         <p>See also: <code>lsof</code></p>
                     </section>
                     </section>
                 <section>
-                    <h1 id="homework">Homework</h1>
+                    <section>
+                        <h1>Homework</h1>
+                    </section>
                     <section>
                         <ul>
-                        <li>Vagrant</li>
+                        <li>Vagrant
+                        <ul>
+                        <li><code>vagrantup.com</code></li>
+                        <li><code>virtualbox.org</code></li>
+                        </ul></li><br>
                         <li>Live CDs
+                        <ul>
+                        <li><code>ubuntu.com/download</code></li>
+                        <li><code>archlinux.org</code></li>
+                        </ul></li>
                         </ul>
+                    </section>
+                    <section>
+                        <h1>Information</h1>
+                    </section>
+                    <section>
+                        <code>colbyolson.com/systems</code>
+                    </section>
 	            </section>
 	       </section>
             </div>
@@ -263,7 +473,7 @@ tcp6       0      0 [::]:6384          [::]:*          LISTEN 13500/redis-server
         <script src="media/js/reveal.js"></script>
         <script>
             Reveal.initialize({
-                width: 999,
+                width: 1400,
                 height: 700,
                 margin: 0.1,
                 minScale: 0.2,
@@ -272,4 +482,3 @@ tcp6       0      0 [::]:6384          [::]:*          LISTEN 13500/redis-server
         </script>
     </body>
 </html>
-
