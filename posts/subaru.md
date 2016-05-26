@@ -19,12 +19,34 @@ A list of things to check and/or change out.
 * Bushings
 * Inner/Outer tie rods and ball joints 
 
+### Banjo bolt
 ### Oil and filter
 
 Popular recommendation seems to be Full Synthetic with turbo cars.
 
 * K&N HP-1008 Filter
 * Rotella T6
+
+### Fluid Change
+
+**Transmission and Rear differential**
+
+Both use synthetic 75W-90 gear oil. Make sure its GL-5 rated.
+
+You'll need 4QTs of fluid for the front and 1QT for the rear.
+
+You will need a T70 Torx bit to take off the front drain plug. Remove dipstick,
+remove and clean plug, drain fluid, re-install plug, use funnel and fill, then
+re-install dipstick. Check levels afterwards.
+
+The rear plugs are 1/2". A pump will be useful for flushing the rear fluids.
+Remove both plugs, drain, then pump/fill until fluid runs clean out of bottom
+hole, insert bottom plug, pump until fluid comes out of top hole, then plug top hole. 
+
+If you have a torque wrench:
+* Oil Drain Plug: 33 ft-lb
+* Transmission Drain Plug (T70): 50.6 ft-lb
+* Rear Drain and Filler Plugs: 36.2 ft-lb
 
 ## Modifications
 
