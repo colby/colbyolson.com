@@ -12,3 +12,5 @@ image=$(
 )
 
 curl -s -o $path $image
+
+jpegoptim -m70 $path
