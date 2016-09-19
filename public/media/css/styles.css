@@ -88,4 +88,8 @@ div.cross {
     div#header {
         display: none
     }
+
+    a {
+        text-decoration: none;
+    }
 }
