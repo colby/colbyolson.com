@@ -2,6 +2,18 @@
 
 Information that I have collected for my 2005 Subaru Outback XT Limited.
 
+*Update:* Engine has blown. Currently at Horizontal Motor Sports.
+
+## Engine
+
+[DOHC - Double Over Head Cam](http://mechanics.stackexchange.com/a/8137)
+
+[EJ255 Version 1](https://en.wikipedia.org/wiki/Subaru_EJ_engine#EJ255): Used in the 2005 and 2006 Legacy, as well as the 2004 and 2005
+Forester. This engine uses the AB440 shortblock, which is the same shortblock as
+the 2004-2006 STI EJ257. The heads on these EJ255 are the AB650s, while the US
+04-06 STI is the familiar AB640/910. The cams are the same between the EJ255
+Version 1 and the EJ257.
+
 ## Maintenance
 
 A list of things to check and/or change out.
@@ -44,9 +56,13 @@ Remove both plugs, drain, then pump/fill until fluid runs clean out of bottom
 hole, insert bottom plug, pump until fluid comes out of top hole, then plug top hole. 
 
 If you have a torque wrench:
+
 * Oil Drain Plug: 33 ft-lb
 * Transmission Drain Plug (T70): 50.6 ft-lb
 * Rear Drain and Filler Plugs: 36.2 ft-lb
+
+[Video of process](https://www.youtube.com/watch?v=OU5BRkyY-LI)
+[Link to more information](http://legacygt.com/forums/showthread.php/pictoral-guide-changing-transmission-and-rear-diff-fluids-5mt-05-94834.html)
 
 ## Modifications
 
