@@ -9,9 +9,10 @@
 ## Work experience
 * **Copious Inc**, Portland, OR 2013-active
 
-Developed and maintained several large scale e-commerce web applications.
+Released and maintained several large scale e-commerce web applications in both
+PHP/Magento and Ruby/RoR.
 
-Developed processes for deployments and for releases that increased stability,
+Developed processes around releases and deployments that increased stability,
 accountability, and team coordination. 
 
 Developed and maintained tooling that empowered developers, improved
@@ -24,7 +25,7 @@ Promoted to Systems Administrator and lead a three-member IT support team.
 Provided multi-OS installations, upgrades, backup and disaster recovery,
 monitoring, user account setup, and (W)LAN/WAN network and security administration.
 
-Scaled infrastructure from 3 locations and 50 users to 16 locations and more
+Scaled infrastructure from 3 locations and 30 users to 16 locations and more
 than 300 users.  
 
 * **FinalConnect**, San Jose, CA 2007-2009
@@ -38,10 +39,9 @@ applications, and peripheral devices.
 
 ## Skills
 * Proficient with Shell scripting and Chef
-* Comfortable with Magento
 * Comfortable with Ruby and PHP
-* Comfortable with UNIX system administration
-    * Mac OSX
+* Comfortable with UNIX-like system administration
+    * OSX
     * Debian
     * CentOS
     * Arch
