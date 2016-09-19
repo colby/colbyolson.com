@@ -83,3 +83,9 @@ div.cross {
         display: inline-block;
     }
 }
+
+@media print {
+    div#header {
+        display: none
+    }
+}
