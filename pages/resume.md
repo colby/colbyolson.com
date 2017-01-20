@@ -9,7 +9,7 @@
 ## Work experience
 * **Copious Inc**, Portland, OR 2013-active
 
-Released and maintained several large scale e-commerce web applications in both
+Built and maintained large scale e-commerce web applications in both
 PHP/Magento and Ruby/RoR.
 
 Developed processes around releases and deployments that increased stability,
@@ -20,7 +20,7 @@ communication, and better leveraged infrastructure.
 
 * **Bay Area Surgical Management**, Santa Clara, CA 2009-2013
 
-Promoted to Systems Administrator and lead a three-member IT support team.
+Systems Administrator and lead of three-member support team.
 
 Provided multi-OS installations, upgrades, backup and disaster recovery,
 monitoring, user account setup, and (W)LAN/WAN network and security administration.
@@ -30,7 +30,7 @@ than 300 users.
 
 * **FinalConnect**, San Jose, CA 2007-2009
 
-Assisted in installing and maintaining computer systems while providing troubleshooting services.
+Installed and maintained computer systems while providing troubleshooting services.
 
 Assisted in documentation of troubleshooting and preparing technical logs.
 
@@ -38,10 +38,9 @@ Ensured timely repair of equipment of end user workstations, software
 applications, and peripheral devices.
 
 ## Skills
-* Proficient with Shell scripting and Chef
+* Proficient with CLI utilities, shell scripting, and Chef
 * Comfortable with Ruby and PHP
-* Comfortable with UNIX-like system administration
+* Comfortable with system administration
     * OSX
     * Debian
-    * CentOS
-    * Arch
+    * RHEL
