@@ -4,9 +4,10 @@ These are miscellaneous notes I've taken while reading climbing related books.
 
 Books:
 
-* [9 Out of 10 Climbers Make the Same Mistakes][]
-* [Training for Climbing][]
-* [Self-Coached Climber][]
+* [The Rock Warrior's Way](http://a.co/0p1O8rP)
+* [Self-Coached Climber](http://a.co/3FFbnTp)
+* [Training for Climbing](http://a.co/eTcKh2Y)
+* [9 Out of 10 Climbers Make the Same Mistakes](http://a.co/d3rWH5N)
 
 ## Fundamentals
 
@@ -27,7 +28,6 @@ Focus on light touch that yields soft forearms.
 Decide how much you need to pull down on a hold, it is imperative that you push with your feet and let the leg muscles carry the load. Think of your arms as points of contact that prevent you from falling backward off the wall.
 
 ## Exercises
-
 ### One-arm Traversing
 
 Find a vertical wall, with good holds and 10ft of travel. Overhanging wall for harder difficulty.
@@ -44,6 +44,3 @@ Climb onto the wall and balance your weight evenly on two footholds. Grip the hi
 
 Continue lunging both arms for three sets.
 
-[9 Out of 10 Climbers Make the Same Mistakes]: http://www.amazon.com/gp/product/095642810X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=095642810X&linkCode=as2&tag=colbyolsoncom-20&linkId=DLIYJXDYKT56QGSW
-[Training for Climbing]: http://www.amazon.com/gp/product/0762746920/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0762746920&linkCode=as2&tag=colbyolsoncom-20&linkId=XZCBZIREPARLF2TQ
-[Self-Coached Climber]: http://www.amazon.com/gp/product/0811733394/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0811733394&linkCode=as2&tag=colbyolsoncom-20&linkId=32YDJEHZS6LIXKPX
