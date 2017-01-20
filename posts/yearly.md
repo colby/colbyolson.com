@@ -1,81 +1,130 @@
-# [2015 In Review](/yearly)
+# [Last Year In Review](/yearly)
 
-A first of hopefully many end-of-year posts, an idea stolen from [jnerula](http://qpfiffer.com/posts/2015-01-01-2014_in_review).
+Thoughts and stats of 2016, an idea stolen from [jnerula](http://qpfiffer.com/posts/2015-01-01-2014_in_review).
+
+## Previously
+* [2015](/yearly-2015)
 
 ## Accomplishments
 
-* Two years living alone in Portland
-* Started rock climbing (Nov '04, but whatevs)
-    * Lead certified
-    * Leading 5.10
-* Started riding a bike more often, 48x17 fixed
-* Became more familiar with different Linux distributions and working within a terminal
-* Promoted to Senior Systems Engineer
-    * Better understanding of Chef, Magento, PHP(-fpm), Git(hub), Ruby, Rails, Nginx, Redis, Linux
-    * Went to OSB again!
+* Did a lot of camping this year
+* Three years living in Portland
+* Three years working at Copious
+* Good progress rock climbing, aside from finger injury in March
+    * Climbed at Bishop, CA
+    * Climbed at Smith Rock, OR
+    * Climbed at Leavenworth, WA
+* Started fly fishing
+    * Lots of trout and bass during summer
+    * No luck with steelhead so far
+* Got another car
+    * 2005 OBXT Limited
 * Contributed to several Open Source projects
     * Community Chef cookbooks
     * Projects of friends
 
 ## Books read
-Didn't read as much as I would have liked this year and I have many books in various incomplete states.
+Again, I didn't read as much as I would have liked. Would like to really make a
+bigger change here this upcoming year.
 
-* [Where Wizards Stay Up Late](http://amzn.com/0684832674)
-* [9 Out of 10 Climbers Make the Same Mistakes](http://amzn.com/095642810X)
-* [When Gadgets Betray Us](http://amzn.com/0465031382)
-* [Always On](http://amzn.com/0306819600)
-* [The Information Diet](http://amzn.com/1491933399)
+* TODO
+* TODO
+* TODO
 
 ## Side-Projects
-Not a productive year for public projects. Most of my work was done on private repositories, which is unfortunate. I've got a decent collection of useful gists, but nothing organized.
+Not as many projects as I would have liked, but my focus this year has been
+mostly on outdoor things. I did manage to release several Chef cookbooks that
+our company uses under the MIT license.
 
 ### Succeeded
-* [dyno](https://github.com/colby/dyno) (sorta)
+* [varnish](https://github.com/copious-cookbooks/varnish)
+* [redis](https://github.com/copious-cookbooks/redis)
+* [mysql](https://github.com/copious-cookbooks/mysql)
+* [nginx](https://github.com/copious-cookbooks/nginx)
+* [ntp](https://github.com/copious-cookbooks/ntp)
+* [iptables](https://github.com/copious-cookbooks/iptables)
 ### Limbo
-* [dyno](https://github.com/colby/dyno) (mostly)
 ### Failed
-* anything else really
 
 ## Regrets
 
-* Not producing much public code
+* Didnt save enough money
+* Not enough time off from work
 * Didn't take enough film photographs
-* Crashing my 04 Fozzy
-* Not traveling 
-* Not learning a new language
+* Didn't develop my own photos
+* Engine in Outback blew up and cost a lot
+* Not traveling outside US
+* Not learning a new language (again)
  
 ## Goals from 2015
+Didn't get many goals done, I think the tech and photo really took a back seat
+to climbing and fishing. Granted, the climbing was also impacted from a finger
+injury that I was slow to return from. Father travel will require more planning.
 
-Failed: nil
+* Photography
+    * Develop film from home (failed)
+    * Submit work for an art show (failed)
+    * Create a small zine (failed)
+* Programming
+    * Learn C and js (failed)
+    * Dabble in a dialect of lisp (failed)
+    * Release a project in C (failed)
+* Japanese
+    * Take a class (failed)
+    * Find a pen pal (failed)
+    * Bought books (success)
+* Climbing
+    * More multi-pitch (sorta?)
+    * Learn trad (wimped out)
+    * V7 indoor (PG PDX), V3 outdoor (success! V4 in Bishop, working V7 at PG)
+    * 11d indoor (PG PDX), 11b outdoor (failed, mostly mental/wimping out)
+* Travel
+    * Japan (failed)
+    * Iceland (failed)
+    * Norway (failed)
 
-Success: nil
+## Goals for 2017
+I'm going to steal some from last year, they're too good and I really should
+have done them. I still really want to learn Japanese and do some film.
 
-## Goals for 2016
-
+* Put motorcycle back together by Summer
+* Golf
+    * Score round less than 85
+    * Score round of 80
+* Climbing
+    * Try trad
+    * V8 send and V6 flash at PG PDX, V6 outdoor
+    * 11d send and 11b onsight indoor at PG PDX, 11b outdoor
+    * Summit two local peaks
+        * Hood
+        * Adams?
+        * Helens?
+        * South Sister?
 * Photography
     * Develop film from home
     * Submit work for an art show
-    * Create a small zine
+    * Create a small seasonal zine
 * Programming
-    * Learn C and js
+    * Learn C and Go
     * Dabble in a dialect of lisp
-    * Release a project in C
 * Japanese
     * Take a class
     * Find a pen pal
-* Climbing
-    * More multi-pitch
-    * Learn trad
-    * V7 indoor (PG PDX), V3 outdoor
-    * 11d indoor (PG PDX), 11b outdoor
+* Fishing
+    * Tie my own flies
+    * Catch a winter steelhead
+    * Catch a summer steelhead
+    * Catch a summer steelhead on a skated fly
+    * Catch a brown trout in OR
 * Travel
-    * Japan
-    * Iceland
-    * Norway
+    * Greece in September to Kalymnos
+    * Bouldering trip in February, Bishop or Red Rocks NV
+    * Fishing trip in June or July
+    * Iceland or Japan?
 
 ## Random Stats
-Weight: ?
+Weight: lol?
 
-Commits: 882
+Commits: 1,576
 
-Bike miles: 445
+Bike miles: 402.7
