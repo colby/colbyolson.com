@@ -11,11 +11,11 @@
 ```bash
 $ cd colbyolson.com
 
-# set the location of the blog, load the new variable
+# set the location of the blog
 $ echo "export BLOG_PATH=/var/www/colbyolson.com" >> ~/.bashrc
 $ source ~/.bashrc
 
-# NOTE: web root should be $BLOG_PATH/public
+# NOTE: docroot is $BLOG_PATH/public
 $ mkdir -p $BLOG_PATH
 $ ln -s $PWD $BLOG_PATH
 
@@ -31,18 +31,22 @@ $ cp lib/change-background /etc/cron.d/
 ```bash
 $ cd $BLOG_PATH
 
-# create an about page
+# create a page
 $ echo "# About" > pages/about.md
 
 # create a post
 $ echo "# A post" > posts/a-new-post.md
 
+# posts become index
+$ cat pages/index.md
+\# A post
+
 # create a draft
-$ lib/draft a simple filename goes here
-$ vim drafts/a-simple-filename-goes-here.md
+$ lib/draft filename goes here
+$ vim drafts/filename-goes-here.md
 
 # publish a draft
-$ mv drafts/a-simple-filename-goes-here.md posts/
+$ mv drafts/filename-goes-here.md posts/
 
 # build the site
 $ lib/build
