@@ -7,6 +7,8 @@ The backgrounds are from [FFD8FFDB](https://twitter.com/FFD8FFDB), using a shell
 
 This website uses [Let's Encrypt](/using-letsencrypt) for SSL certification. Those people are doing awesome work.
 
+Veep veep.
+
 Disclaimer: I occasionally insert an affiliate code into links for Amazon products.
 
 ## Contact Information
