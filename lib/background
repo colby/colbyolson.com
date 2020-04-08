@@ -4,6 +4,8 @@ set -o errexit
 
 path=$BLOG_PATH/public/media/images/background.jpg
 
+mkdir -p $path
+
 # RIP twitter account :(
 # image=$(
 #     curl -s https://twitter.com/FFD8FFDB | \
