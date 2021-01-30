@@ -235,8 +235,3 @@ river and just downstream from Estacada, and offers a ton of riverfront access.
 Coho Salmon begin to enter the Clackamas River in August. They spawn in October
 and early November.  Most of the Silver Salmon average about  5 to 10 pounds and
 head straight for the Eagle Creek hatchery.
-
-## Maps
-![Lower Clackamas](http://i1.wp.com/steelheadu.com/wp-content/uploads/2015/05/lowerclack2.jpg "Lower Clackamas")
-![Upper Clackmas](http://i1.wp.com/steelheadu.com/wp-content/uploads/2015/05/upperclack2.jpg "Upper Clackmas")
-![Eagle Creek](http://www.totalflyfishing.com/images/2016/05/P3_f_map_OR_Eagle_Creek.jpg "Eagle Creek")
